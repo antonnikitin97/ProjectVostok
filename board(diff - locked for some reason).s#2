@@ -13282,6 +13282,27 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="26.49" y1="-12.295" x2="26.49" y2="12.295" width="0.1" layer="25"/>
 <wire x1="26.49" y1="12.295" x2="-26.49" y2="12.295" width="0.1" layer="25"/>
 </package>
+<package name="PEC12R-4XXXF-SXXXX_1">
+<description>&lt;b&gt;PEC12R-4XXXF-SXXXX&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="-2.5" y="-7.5" drill="1.2" diameter="1.8"/>
+<pad name="2" x="2.5" y="-7.5" drill="1.2" diameter="1.8"/>
+<pad name="3" x="0" y="-7.5" drill="1.2" diameter="1.8"/>
+<pad name="4" x="-2.5" y="7" drill="1.2" diameter="1.8"/>
+<pad name="5" x="2.5" y="7" drill="1.2" diameter="1.8"/>
+<pad name="6" x="5.6" y="0" drill="3.28" diameter="4.8"/>
+<pad name="7" x="-5.6" y="0" drill="3.28" diameter="4.8"/>
+<text x="-0.357" y="-1.016" size="1.27" layer="25" align="center">&gt;NAME</text>
+<wire x1="-6.2" y1="6.7" x2="6.2" y2="6.7" width="0.254" layer="51"/>
+<wire x1="6.2" y1="6.7" x2="6.2" y2="-6.7" width="0.254" layer="51"/>
+<wire x1="6.2" y1="-6.7" x2="-6.2" y2="-6.7" width="0.254" layer="51"/>
+<wire x1="-6.2" y1="-6.7" x2="-6.2" y2="6.7" width="0.254" layer="51"/>
+<wire x1="-6.2" y1="6.7" x2="-6.2" y2="2.6" width="0.254" layer="25"/>
+<wire x1="-6.2" y1="-6.7" x2="-6.2" y2="-2.6" width="0.254" layer="25"/>
+<wire x1="6.2" y1="6.7" x2="6.2" y2="2.6" width="0.254" layer="25"/>
+<wire x1="6.2" y1="-6.7" x2="6.2" y2="-2.6" width="0.254" layer="25"/>
+<circle x="-2.533" y="-8.863" radius="0.0821" width="0.254" layer="25"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2468">
@@ -13293,6 +13314,19 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <text x="12.7" y="-5.08" size="1.778" layer="96" align="center">&gt;VALUE</text>
 <pin name="POS" x="0" y="0" length="middle" direction="pas"/>
 <pin name="NEG" x="25.4" y="0" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="PEC11R-4015F-S0024">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="2.54" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<text x="10.16" y="5.08" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="10.16" y="-10.16" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<pin name="A" x="0" y="0" length="middle" direction="pas"/>
+<pin name="B" x="0" y="-2.54" length="middle" direction="pas"/>
+<pin name="C" x="0" y="-5.08" length="middle" direction="pas"/>
+<pin name="1" x="20.32" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="2" x="20.32" y="-2.54" length="middle" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13320,6 +13354,39 @@ Source: &lt;a href="http://docs-europe.electrocomponents.com/webdocs/002e/090076
 <attribute name="MANUFACTURER_PART_NUMBER" value="2468" constant="no"/>
 <attribute name="OTHER_PART_NUMBER" value="" constant="no"/>
 <attribute name="RS_PART_NUMBER" value="2794965" constant="no"/>
+<attribute name="SUPPLIER_NAME" value="RS" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PEC11R-4015F-S0024" prefix="U">
+<description>&lt;b&gt;Bourns 24 Pulse Incremental Mechanical Rotary Encoder with a 6 mm Flat Shaft (Not Indexed), Through Hole&lt;/b&gt;&lt;p&gt;
+&lt;/b&gt;&lt;br&gt;&lt;a href="&lt;br&gt;&lt;a href="https://componentsearchengine.com/Images/3/PEC11R-4015F-S0024.jpg" title="Image"&gt;
+&lt;img src="https://componentsearchengine.com/Images/3/PEC11R-4015F-S0024.jpg" width="150"&gt;&lt;/a&gt;&lt;p&gt;
+Source: &lt;a href="https://www.bourns.com/docs/Product-Datasheets/pec11R.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="PEC11R-4015F-S0024" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PEC12R-4XXXF-SXXXX_1">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="2"/>
+<connect gate="G$1" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="3D_PACKAGE" value="" constant="no"/>
+<attribute name="ALLIED_NUMBER" value="" constant="no"/>
+<attribute name="DESCRIPTION" value="Bourns 24 Pulse Incremental Mechanical Rotary Encoder with a 6 mm Flat Shaft (Not Indexed), Through Hole" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Bourns" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="PEC11R-4015F-S0024" constant="no"/>
+<attribute name="OTHER_PART_NUMBER" value="" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="7377739P" constant="no"/>
 <attribute name="SUPPLIER_NAME" value="RS" constant="no"/>
 </technology>
 </technologies>
@@ -13371,11 +13438,12 @@ Source: &lt;a href="http://docs-europe.electrocomponents.com/webdocs/002e/090076
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="U1" library="MCP1825S-3302E_DB" deviceset="MCP1825S-3302E/DB" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2"/>
-<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2"/>
+<part name="PORTA" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2"/>
+<part name="PORTC" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X4" device="" package3d_urn="urn:adsk.eagle:package:22461/2"/>
 <part name="J2" library="SamacSys_Parts" deviceset="2468" device=""/>
 <part name="J3" library="SamacSys_Parts" deviceset="2468" device=""/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U2" library="SamacSys_Parts" deviceset="PEC11R-4015F-S0024" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13418,11 +13486,12 @@ Source: &lt;a href="http://docs-europe.electrocomponents.com/webdocs/002e/090076
 <instance part="P+4" gate="VCC" x="93.98" y="71.12"/>
 <instance part="U1" gate="A" x="-76.2" y="17.78" rot="R90"/>
 <instance part="GND8" gate="1" x="-68.58" y="-22.86"/>
-<instance part="JP1" gate="A" x="7.62" y="68.58"/>
-<instance part="JP2" gate="A" x="7.62" y="50.8"/>
+<instance part="PORTA" gate="A" x="7.62" y="68.58"/>
+<instance part="PORTC" gate="A" x="7.62" y="50.8"/>
 <instance part="J2" gate="G$1" x="-40.64" y="25.4"/>
 <instance part="J3" gate="G$1" x="-40.64" y="12.7"/>
 <instance part="GND9" gate="1" x="-10.16" y="5.08"/>
+<instance part="U2" gate="G$1" x="-2.54" y="30.48"/>
 </instances>
 <busses>
 </busses>

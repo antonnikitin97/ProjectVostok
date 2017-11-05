@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13382,7 +13382,7 @@ W = angled&lt;p&gt;
 <part name="Q1" library="transistor-pnp" deviceset="2N3906" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="0207/7" value="1.0K"/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="0207/7" value="10K"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="0207/7" value="10.0K"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="ICSP" library="adaprog" deviceset="PINHD-2X3" device="THM"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
