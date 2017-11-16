@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.0">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14638,6 +14638,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="U1" library="MCP1825S-3302E_DB" deviceset="MCP1825S-3302E/DB" device=""/>
+<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14682,6 +14683,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <instance part="P+3" gate="VCC" x="55.88" y="71.12"/>
 <instance part="P+4" gate="VCC" x="93.98" y="71.12"/>
 <instance part="U1" gate="A" x="-81.28" y="33.02"/>
+<instance part="GND8" gate="1" x="-111.76" y="17.78"/>
 </instances>
 <busses>
 </busses>
@@ -14725,6 +14727,16 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-149.86" y1="22.86" x2="-149.86" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-149.86" y1="20.32" x2="-139.7" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-139.7" y="20.32"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="GND_(TAB)"/>
+<wire x1="-104.14" y1="27.94" x2="-111.76" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="27.94" x2="-111.76" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="GND_(TAB)_2"/>
+<wire x1="-111.76" y1="25.4" x2="-111.76" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="25.4" x2="-111.76" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-111.76" y="25.4"/>
+<pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -14808,6 +14820,9 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="50.8" y1="88.9" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="88.9" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
 <junction x="33.02" y="73.66"/>
+<pinref part="Q1" gate="G$1" pin="C"/>
+<wire x1="25.4" y1="81.28" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="73.66" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">

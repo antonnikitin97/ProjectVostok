@@ -13382,7 +13382,7 @@ W = angled&lt;p&gt;
 <part name="Q1" library="transistor-pnp" deviceset="2N3906" device=""/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="R1" library="resistor" deviceset="R-EU_" device="0207/7" value="1.0K"/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="0207/7" value="10K"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="0207/7" value="10.0K"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="ICSP" library="adaprog" deviceset="PINHD-2X3" device="THM"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
@@ -13458,7 +13458,7 @@ W = angled&lt;p&gt;
 <instance part="J2" gate="G$1" x="-40.64" y="25.4"/>
 <instance part="J3" gate="G$1" x="-40.64" y="12.7"/>
 <instance part="GND9" gate="1" x="-10.16" y="5.08"/>
-<instance part="U2" gate="G$1" x="0" y="60.96"/>
+<instance part="U2" gate="G$1" x="-129.54" y="48.26"/>
 <instance part="SV1" gate="G$1" x="10.16" y="111.76"/>
 <instance part="SV2" gate="G$1" x="10.16" y="83.82"/>
 <instance part="GND11" gate="1" x="20.32" y="121.92" rot="R180"/>
@@ -13734,6 +13734,10 @@ W = angled&lt;p&gt;
 <pinref part="IC1" gate="G$1" pin="GND@1"/>
 <wire x1="-30.48" y1="91.44" x2="-25.4" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="91.44" x2="-25.4" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="2"/>
+<wire x1="-109.22" y1="45.72" x2="-101.6" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="45.72" x2="-101.6" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-101.6" y="55.88"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -13749,6 +13753,12 @@ W = angled&lt;p&gt;
 <wire x1="-71.12" y1="40.64" x2="-104.14" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="40.64" x2="-104.14" y2="53.34" width="0.1524" layer="91"/>
 <junction x="-104.14" y="53.34"/>
+<pinref part="U2" gate="G$1" pin="C"/>
+<wire x1="-129.54" y1="43.18" x2="-132.08" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="43.18" x2="-132.08" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="27.94" x2="-104.14" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="27.94" x2="-104.14" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-104.14" y="40.64"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -13978,6 +13988,37 @@ W = angled&lt;p&gt;
 <segment>
 <pinref part="IC1" gate="G$1" pin="PCINT23/TOSC2_PC7"/>
 <wire x1="-30.48" y1="86.36" x2="-27.94" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="A"/>
+<wire x1="-129.54" y1="48.26" x2="-132.08" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="48.26" x2="-132.08" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="55.88" x2="-109.22" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="55.88" x2="-109.22" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="PCINT24/RXD0_PD0"/>
+<wire x1="-109.22" y1="81.28" x2="-91.44" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="B"/>
+<wire x1="-129.54" y1="45.72" x2="-134.62" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-134.62" y1="45.72" x2="-134.62" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-134.62" y1="30.48" x2="-106.68" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-106.68" y1="30.48" x2="-106.68" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="PCINT25/TXD0_PD1"/>
+<wire x1="-106.68" y1="78.74" x2="-91.44" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="1"/>
+<wire x1="-109.22" y1="48.26" x2="-99.06" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="48.26" x2="-99.06" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="PCINT26/INT0_PD2"/>
+<wire x1="-99.06" y1="76.2" x2="-91.44" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

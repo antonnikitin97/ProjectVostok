@@ -12,7 +12,7 @@
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
 <layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
 <layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
@@ -2646,6 +2646,27 @@ grid 2.54 mm, diameter 6 mm</description>
 <wire x1="26.49" y1="-12.295" x2="26.49" y2="12.295" width="0.1" layer="25"/>
 <wire x1="26.49" y1="12.295" x2="-26.49" y2="12.295" width="0.1" layer="25"/>
 </package>
+<package name="PEC12R-4XXXF-SXXXX_1">
+<description>&lt;b&gt;PEC12R-4XXXF-SXXXX&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="-2.5" y="-7.5" drill="1.2" diameter="1.8"/>
+<pad name="2" x="2.5" y="-7.5" drill="1.2" diameter="1.8"/>
+<pad name="3" x="0" y="-7.5" drill="1.2" diameter="1.8"/>
+<pad name="4" x="-2.5" y="7" drill="1.2" diameter="1.8"/>
+<pad name="5" x="2.5" y="7" drill="1.2" diameter="1.8"/>
+<pad name="6" x="5.6" y="0" drill="3.28" diameter="4.8"/>
+<pad name="7" x="-5.6" y="0" drill="3.28" diameter="4.8"/>
+<text x="-0.357" y="-1.016" size="1.27" layer="25" align="center">&gt;NAME</text>
+<wire x1="-6.2" y1="6.7" x2="6.2" y2="6.7" width="0.254" layer="51"/>
+<wire x1="6.2" y1="6.7" x2="6.2" y2="-6.7" width="0.254" layer="51"/>
+<wire x1="6.2" y1="-6.7" x2="-6.2" y2="-6.7" width="0.254" layer="51"/>
+<wire x1="-6.2" y1="-6.7" x2="-6.2" y2="6.7" width="0.254" layer="51"/>
+<wire x1="-6.2" y1="6.7" x2="-6.2" y2="2.6" width="0.254" layer="25"/>
+<wire x1="-6.2" y1="-6.7" x2="-6.2" y2="-2.6" width="0.254" layer="25"/>
+<wire x1="6.2" y1="6.7" x2="6.2" y2="2.6" width="0.254" layer="25"/>
+<wire x1="6.2" y1="-6.7" x2="6.2" y2="-2.6" width="0.254" layer="25"/>
+<circle x="-2.533" y="-8.863" radius="0.0821" width="0.254" layer="25"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -2744,11 +2765,11 @@ design rules under a new name.</description>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
 <param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
+<param name="Efforts" value="2"/>
 <param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="a"/>
-<param name="PrefDir.2" value="0"/>
+<param name="PrefDir.2" value="a"/>
 <param name="PrefDir.3" value="0"/>
 <param name="PrefDir.4" value="0"/>
 <param name="PrefDir.5" value="0"/>
@@ -2858,16 +2879,16 @@ design rules under a new name.</description>
 <element name="LED8" library="tvbgone" package="5MM-SIDE" value="LED" x="5" y="43" rot="R90"/>
 <element name="LED9" library="tvbgone" package="5MM-SIDE" value="LED" x="5" y="33" rot="R90"/>
 <element name="LED3" library="tvbgone" package="5MM-SIDE" value="LED" x="5" y="56" rot="R90"/>
-<element name="U1" library="MCP1825S-3302E_DB" package="SOT230P700X180-4N" value="MCP1825S-3302E/DB" x="48.8" y="13.1">
-<attribute name="AVAILABILITY" value="Good" x="48.8" y="13.1" size="1.778" layer="27" display="off"/>
-<attribute name="DESCRIPTION" value="MCP1825 Series 500 mA Low Quiescent Current LDO Regulator - SOT-223-3" x="48.8" y="13.1" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Microchip" x="48.8" y="13.1" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="MCP1825S-3302E/DB" x="48.8" y="13.1" size="1.778" layer="27" display="off"/>
-<attribute name="PACKAGE" value="SOT-223-3 Microchip" x="48.8" y="13.1" size="1.778" layer="27" display="off"/>
-<attribute name="PRICE" value="0.46 USD" x="48.8" y="13.1" size="1.778" layer="27" display="off"/>
+<element name="U1" library="MCP1825S-3302E_DB" package="SOT230P700X180-4N" value="MCP1825S-3302E/DB" x="49.6" y="15.2">
+<attribute name="AVAILABILITY" value="Good" x="49.6" y="15.2" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="MCP1825 Series 500 mA Low Quiescent Current LDO Regulator - SOT-223-3" x="49.6" y="15.2" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Microchip" x="49.6" y="15.2" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="MCP1825S-3302E/DB" x="49.6" y="15.2" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="SOT-223-3 Microchip" x="49.6" y="15.2" size="1.778" layer="27" display="off"/>
+<attribute name="PRICE" value="0.46 USD" x="49.6" y="15.2" size="1.778" layer="27" display="off"/>
 </element>
-<element name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X04" package3d_urn="urn:adsk.eagle:package:22461/2" value="" x="72.9" y="33" rot="R90"/>
-<element name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X04" package3d_urn="urn:adsk.eagle:package:22461/2" value="" x="164.8" y="30.6" rot="R90"/>
+<element name="PORTA" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X04" package3d_urn="urn:adsk.eagle:package:22461/2" value="" x="72.9" y="33" rot="R90"/>
+<element name="PORTC" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X04" package3d_urn="urn:adsk.eagle:package:22461/2" value="" x="164.8" y="30.6" rot="R90"/>
 <element name="J2" library="SamacSys_Parts" package="2468" value="2468" x="92.4" y="82.5">
 <attribute name="3D_PACKAGE" value="" x="92.4" y="82.5" size="1.778" layer="27" display="off"/>
 <attribute name="ALLIED_NUMBER" value="70182756" x="92.4" y="82.5" size="1.778" layer="27" display="off"/>
@@ -2890,6 +2911,17 @@ design rules under a new name.</description>
 <attribute name="RS_PART_NUMBER" value="2794965" x="151.3" y="82.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="151.3" y="82.4" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
+<element name="U2" library="SamacSys_Parts" package="PEC12R-4XXXF-SXXXX_1" value="PEC11R-4015F-S0024" x="24.5" y="14.4" rot="R90">
+<attribute name="3D_PACKAGE" value="" x="24.5" y="14.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="24.5" y="14.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" value="Bourns 24 Pulse Incremental Mechanical Rotary Encoder with a 6 mm Flat Shaft (Not Indexed), Through Hole" x="24.5" y="14.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="mm" x="24.5" y="14.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Bourns" x="24.5" y="14.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="PEC11R-4015F-S0024" x="24.5" y="14.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="24.5" y="14.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="RS_PART_NUMBER" value="7377739P" x="24.5" y="14.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="24.5" y="14.4" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2906,18 +2938,18 @@ design rules under a new name.</description>
 <contactref element="J2" pad="2"/>
 <contactref element="U1" pad="2"/>
 <contactref element="U1" pad="4"/>
-<wire x1="127.675" y1="76.05" x2="116.025" y2="88.85" width="0" layer="19" extent="1-1"/>
+<wire x1="116.025" y1="88.85" x2="127.675" y2="76.05" width="0" layer="19" extent="1-1"/>
 <wire x1="51.21" y1="93.01" x2="116.025" y2="88.85" width="0" layer="19" extent="1-1"/>
-<wire x1="28.88" y1="77.04" x2="51.21" y2="93.01" width="0" layer="19" extent="1-1"/>
+<wire x1="33.57" y1="91.45" x2="51.21" y2="93.01" width="0" layer="19" extent="1-1"/>
+<wire x1="28.88" y1="77.04" x2="33.57" y2="91.45" width="0" layer="19" extent="1-1"/>
 <wire x1="22.48" y1="77.33" x2="28.88" y2="77.04" width="0" layer="19" extent="1-1"/>
 <wire x1="28.78" y1="64.25" x2="28.88" y2="77.04" width="0" layer="19" extent="1-1"/>
 <wire x1="21.61" y1="62.26" x2="28.78" y2="64.25" width="0" layer="19" extent="1-1"/>
 <wire x1="28.78" y1="50.36" x2="28.78" y2="64.25" width="0" layer="19" extent="1-1"/>
 <wire x1="28.66" y1="39.55" x2="28.78" y2="50.36" width="0" layer="19" extent="1-1"/>
-<wire x1="16.97" y1="91.46" x2="28.66" y2="39.55" width="0" layer="19" extent="1-1"/>
-<wire x1="33.57" y1="91.45" x2="16.97" y2="91.46" width="0" layer="19" extent="1-1"/>
-<wire x1="45.5996" y1="13.1" x2="33.57" y2="91.45" width="0" layer="19" extent="1-1"/>
-<wire x1="52.0004" y1="13.1" x2="45.5996" y2="13.1" width="0" layer="19" extent="1-1"/>
+<wire x1="16.97" y1="91.46" x2="22.48" y2="77.33" width="0" layer="19" extent="1-1"/>
+<wire x1="46.3996" y1="15.2" x2="28.66" y2="39.55" width="0" layer="19" extent="1-1"/>
+<wire x1="52.8004" y1="15.2" x2="46.3996" y2="15.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="Q1" pad="3"/>
@@ -3000,7 +3032,7 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="10"/>
 <contactref element="IC1" pad="30"/>
 <contactref element="U1" pad="3"/>
-<wire x1="56.82" y1="54.19" x2="45.5996" y2="10.7886" width="0" layer="19" extent="1-1"/>
+<wire x1="56.82" y1="54.19" x2="46.3996" y2="12.8886" width="0" layer="19" extent="1-1"/>
 <wire x1="41.58" y1="56.73" x2="56.82" y2="54.19" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
@@ -3036,7 +3068,7 @@ design rules under a new name.</description>
 <contactref element="J3" pad="1"/>
 <contactref element="U1" pad="1"/>
 <wire x1="127.675" y1="88.75" x2="116.025" y2="76.15" width="0" layer="19" extent="1-1"/>
-<wire x1="45.5996" y1="15.4114" x2="116.025" y2="76.15" width="0" layer="19" extent="1-1"/>
+<wire x1="46.3996" y1="17.5114" x2="116.025" y2="76.15" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
