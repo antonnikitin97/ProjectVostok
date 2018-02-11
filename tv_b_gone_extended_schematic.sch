@@ -12949,10 +12949,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="LED1" library="tvbgone" deviceset="LED" device=""/>
 <part name="LED2" library="tvbgone" deviceset="LED" device=""/>
 <part name="LED4" library="tvbgone" deviceset="LED" device=""/>
-<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="ICSP" library="adaprog" deviceset="PINHD-2X3" device="THM"/>
 <part name="XTL1" library="digg" deviceset="CERMOSCILL" device="" value="8.0MHz"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -12979,6 +12975,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:25955/1"/>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:25955/1"/>
+<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13058,8 +13055,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <text x="134.62" y="73.66" size="1.778" layer="95">PB4</text>
 <text x="180.34" y="35.56" size="1.778" layer="95">UNUSED</text>
 <text x="198.12" y="27.94" size="1.778" layer="95">VOUT_REG</text>
-<text x="198.12" y="10.16" size="1.778" layer="95">PB2</text>
 <text x="48.26" y="30.48" size="1.778" layer="95">PB3</text>
+<text x="58.42" y="83.82" size="1.778" layer="95" rot="R90">VOUT_REG</text>
+<text x="73.66" y="83.82" size="1.778" layer="95" rot="R90">VOUT_REG</text>
+<text x="88.9" y="83.82" size="1.778" layer="95" rot="R90">VOUT_REG</text>
+<text x="104.14" y="83.82" size="1.778" layer="95" rot="R90">VOUT_REG</text>
+<text x="203.2" y="12.7" size="1.778" layer="95">PB2</text>
 </plain>
 <instances>
 <instance part="T1" gate="G1" x="55.88" y="58.42"/>
@@ -13074,10 +13075,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="LED1" gate="G$1" x="73.66" y="73.66"/>
 <instance part="LED2" gate="G$1" x="88.9" y="73.66"/>
 <instance part="LED4" gate="G$1" x="104.14" y="73.66"/>
-<instance part="P+2" gate="VCC" x="58.42" y="86.36"/>
-<instance part="P+3" gate="VCC" x="73.66" y="86.36"/>
-<instance part="P+4" gate="VCC" x="88.9" y="86.36"/>
-<instance part="P+5" gate="VCC" x="104.14" y="86.36"/>
 <instance part="ICSP" gate="G$1" x="259.08" y="-2.54"/>
 <instance part="XTL1" gate="G$1" x="264.16" y="-35.56" smashed="yes" rot="R270">
 <attribute name="NAME" x="265.43" y="-29.21" size="1.778" layer="95" rot="R180"/>
@@ -13107,6 +13104,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="GND13" gate="1" x="195.58" y="60.96" rot="R90"/>
 <instance part="R1" gate="G$1" x="198.12" y="20.32" rot="R90"/>
 <instance part="R2" gate="G$1" x="63.5" y="30.48"/>
+<instance part="GND14" gate="1" x="203.2" y="2.54"/>
 </instances>
 <busses>
 </busses>
@@ -13199,44 +13197,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="175.26" y1="60.96" x2="193.04" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="10.16" x2="203.2" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="10.16" x2="203.2" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
 <pinref part="Q5" gate="G$1" pin="E"/>
 <wire x1="81.28" y1="35.56" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<pinref part="LED3" gate="G$1" pin="A1"/>
-<wire x1="58.42" y1="78.74" x2="60.96" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="78.74" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
-<junction x="58.42" y="78.74"/>
-<pinref part="P+2" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<pinref part="LED1" gate="G$1" pin="A1"/>
-<wire x1="73.66" y1="78.74" x2="76.2" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="78.74" x2="73.66" y2="83.82" width="0.1524" layer="91"/>
-<junction x="73.66" y="78.74"/>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<pinref part="LED2" gate="G$1" pin="A1"/>
-<wire x1="88.9" y1="78.74" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="78.74" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
-<junction x="88.9" y="78.74"/>
-<pinref part="P+4" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="LED4" gate="G$1" pin="A"/>
-<pinref part="LED4" gate="G$1" pin="A1"/>
-<wire x1="104.14" y1="78.74" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="78.74" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
-<junction x="104.14" y="78.74"/>
-<pinref part="P+5" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="-20.32" x2="223.52" y2="-20.32" width="0.1524" layer="91"/>
@@ -13597,6 +13569,34 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="25.4" x2="198.12" y2="27.94" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="LED3" gate="G$1" pin="A1"/>
+<wire x1="58.42" y1="78.74" x2="60.96" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="78.74" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
+<junction x="58.42" y="78.74"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="LED1" gate="G$1" pin="A1"/>
+<wire x1="73.66" y1="78.74" x2="76.2" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="78.74" x2="73.66" y2="83.82" width="0.1524" layer="91"/>
+<junction x="73.66" y="78.74"/>
+</segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="LED2" gate="G$1" pin="A1"/>
+<wire x1="88.9" y1="78.74" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="78.74" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
+<junction x="88.9" y="78.74"/>
+</segment>
+<segment>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="LED4" gate="G$1" pin="A1"/>
+<wire x1="104.14" y1="78.74" x2="106.68" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="78.74" x2="104.14" y2="83.82" width="0.1524" layer="91"/>
+<junction x="104.14" y="78.74"/>
+</segment>
 </net>
 <net name="N$10" class="0">
 <segment>
@@ -13658,22 +13658,18 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="175.26" y1="35.56" x2="180.34" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="PB2" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="PB2"/>
+<wire x1="144.78" y1="78.74" x2="134.62" y2="78.74" width="0.1524" layer="91"/>
+</segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="12.7" x2="198.12" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="12.7" x2="198.12" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="PB2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="2"/>
-<wire x1="195.58" y1="10.16" x2="198.12" y2="10.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC1" gate="G$1" pin="PB2"/>
-<wire x1="144.78" y1="78.74" x2="134.62" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="12.7" x2="203.2" y2="12.7" width="0.1524" layer="91"/>
+<junction x="198.12" y="12.7"/>
 </segment>
 </net>
 <net name="N$7" class="0">
