@@ -163,7 +163,7 @@
 <text x="90.17" y="59.055" size="1.778" layer="25" rot="R270">Anton Nikitin
 Project Vostok
 2018 Version 1</text>
-<text x="0.635" y="59.69" size="0.6096" layer="25">IR LED Circuit taken from TV-B-Gone
+<text x="0.635" y="59.69" size="0.6096" layer="25">Based Upon TV-B-Gone
 By Mitch Altman</text>
 <text x="22.225" y="19.685" size="0.6096" layer="25" rot="R90">ATMega644P</text>
 </plain>

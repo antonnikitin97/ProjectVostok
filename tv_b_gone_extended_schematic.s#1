@@ -11910,12 +11910,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <text x="134.62" y="76.2" size="1.778" layer="95">PB3</text>
 <text x="180.34" y="35.56" size="1.778" layer="95">UNUSED</text>
 <text x="134.62" y="73.66" size="1.778" layer="95">UNUSED</text>
-<text x="198.12" y="-41.402" size="2.032" layer="94">http://www.tvbgone.com</text>
-<text x="198.12" y="-37.338" size="2.032" layer="94">Project Vostok
+<text x="68.58" y="-76.962" size="2.032" layer="94">http://www.tvbgone.com</text>
+<text x="68.58" y="-72.898" size="2.032" layer="94">Project Vostok
 IR LED Circuit taken from TV-B-Gone</text>
-<text x="287.02" y="-58.42" size="2.54" layer="94">v1.0</text>
-<text x="271.78" y="-38.1" size="2.54" layer="94">CC 2.5 BY/SA</text>
-<text x="227.584" y="-58.166" size="5.08" layer="94">1</text>
+<text x="157.48" y="-93.98" size="2.54" layer="94">v1.0</text>
+<text x="142.24" y="-73.66" size="2.54" layer="94">CC 2.5 BY/SA</text>
+<text x="98.044" y="-93.726" size="5.08" layer="94">1</text>
 <wire x1="17.78" y1="101.6" x2="104.14" y2="101.6" width="0.1524" layer="95" style="shortdash"/>
 <wire x1="104.14" y1="101.6" x2="104.14" y2="25.4" width="0.1524" layer="95" style="shortdash"/>
 <wire x1="104.14" y1="25.4" x2="17.78" y2="25.4" width="0.1524" layer="95" style="shortdash"/>
@@ -12008,7 +12008,7 @@ With Push Button</text>
 <instance part="S1" gate="G$1" x="248.92" y="27.94"/>
 <instance part="R3" gate="G$1" x="238.76" y="25.4"/>
 <instance part="GND15" gate="1" x="274.32" y="20.32"/>
-<instance part="FRAME1" gate="G$1" x="195.58" y="-66.04"/>
+<instance part="FRAME1" gate="G$1" x="66.04" y="-101.6"/>
 </instances>
 <busses>
 </busses>
