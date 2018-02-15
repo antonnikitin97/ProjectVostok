@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.0">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12039,7 +12039,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="93.98" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="T1_C" class="0">
 <segment>
 <pinref part="LED3" gate="G$1" pin="C"/>
 <pinref part="LED3" gate="G$1" pin="C1"/>
@@ -12049,7 +12049,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="58.42" y="71.12"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="T2_C" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="LED1" gate="G$1" pin="C1"/>
@@ -12059,7 +12059,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="73.66" y="71.12"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="T3_C" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="LED2" gate="G$1" pin="C1"/>
@@ -12069,7 +12069,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <junction x="88.9" y="71.12"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="T4_C" class="0">
 <segment>
 <pinref part="LED4" gate="G$1" pin="C"/>
 <pinref part="LED4" gate="G$1" pin="C1"/>
