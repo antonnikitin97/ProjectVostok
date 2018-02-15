@@ -1,2 +1,2 @@
 ### EAGLE PROJECT FILES ###
-*.epf
+/boardfiles/*.epf
