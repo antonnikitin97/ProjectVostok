@@ -11911,7 +11911,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <text x="180.34" y="35.56" size="1.778" layer="95">UNUSED</text>
 <text x="134.62" y="73.66" size="1.778" layer="95">UNUSED</text>
 <text x="198.12" y="-41.402" size="2.032" layer="94">http://www.tvbgone.com</text>
-<text x="198.12" y="-37.338" size="2.032" layer="94">Project Vostok
+<text x="198.12" y="-37.338" size="2.032" layer="94">Project Vostok - Anton Nikitin
 IR LED Circuit taken from TV-B-Gone</text>
 <text x="287.02" y="-58.42" size="2.54" layer="94">v1.0</text>
 <text x="271.78" y="-38.1" size="2.54" layer="94">CC 2.5 BY/SA</text>
