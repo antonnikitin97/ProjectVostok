@@ -1,5 +1,5 @@
 # Project Vostok
-Hello and welcome to my project repo! Here you will find the schematic files and firmware files (eventually) pertaining to my project!
+Hello and welcome to my project repo! Here you will find the schematic files and (eventually) firmware files pertaining to my project!
 
 ## What is Project Vostok?
 A few months back, I bought myself a [TV-B-Gone](http://www.tvbgone.com/) (a gag device that allows you to turn off any TV). After 
