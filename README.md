@@ -27,6 +27,7 @@ These are the people that have helped make this project a reality:
   programming and offered his time and effort into verifying that my design would work as intended!
   - [ninjafrostpn](https://github.com/ninjafrostpn) - another amazing Marine Biologist friend who supported and encouraged me to carry
   on even when things were slow!
+  - [Professor Steve R. Gunn](http://users.ecs.soton.ac.uk/srg) - Academic at the University of Southampton who designed the LCD board that   I used in this project.
   - The lab technicians on Level 2 of the Zepler Building at the University of Southampton - these wonderful people helped immensely in 
   sourcing components and providing general help and guidance!
   
