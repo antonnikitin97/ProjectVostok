@@ -9029,6 +9029,8 @@ Source: http://www.osram.convergy.de/</description>
 <part name="LED5" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="LED" device="5MM"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0204/7" package3d_urn="urn:adsk.eagle:package:23498/1"/>
+<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9055,27 +9057,9 @@ Source: http://www.osram.convergy.de/</description>
 <text x="116.84" y="266.7" size="1.778" layer="95">PC5</text>
 <text x="116.84" y="269.24" size="1.778" layer="95">PC6</text>
 <text x="116.84" y="271.78" size="1.778" layer="95">PC7</text>
-<text x="165.1" y="287.02" size="1.778" layer="95">PA0</text>
-<text x="190.5" y="287.02" size="1.778" layer="95">PA1</text>
-<text x="165.1" y="284.48" size="1.778" layer="95">PA2</text>
-<text x="190.5" y="284.48" size="1.778" layer="95">PA3</text>
-<text x="165.1" y="281.94" size="1.778" layer="95">PA4</text>
-<text x="190.5" y="281.94" size="1.778" layer="95">PA5</text>
-<text x="165.1" y="279.4" size="1.778" layer="95">PA6</text>
-<text x="190.5" y="279.4" size="1.778" layer="95">PA7</text>
-<text x="165.1" y="309.88" size="1.778" layer="95">PC0</text>
-<text x="190.5" y="309.88" size="1.778" layer="95">PC1</text>
-<text x="165.1" y="307.34" size="1.778" layer="95">PC2</text>
-<text x="190.5" y="307.34" size="1.778" layer="95">PC3</text>
-<text x="165.1" y="304.8" size="1.778" layer="95">PC4</text>
-<text x="190.5" y="304.8" size="1.778" layer="95">PC5</text>
-<text x="165.1" y="302.26" size="1.778" layer="95">PC6</text>
-<text x="190.5" y="302.26" size="1.778" layer="95">PC7</text>
 <text x="71.12" y="299.72" size="1.778" layer="95">PB0</text>
 <text x="71.12" y="297.18" size="1.778" layer="95">PB1</text>
 <text x="66.04" y="276.86" size="1.778" layer="95">VOUT_REG</text>
-<text x="190.5" y="269.24" size="1.778" layer="95">VOUT_REG</text>
-<text x="190.5" y="294.64" size="1.778" layer="95">VOUT_REG</text>
 <text x="116.84" y="274.32" size="1.778" layer="95">VOUT_REG</text>
 <text x="71.12" y="266.7" size="1.778" layer="95">UNUSED</text>
 <text x="71.12" y="264.16" size="1.778" layer="95">UNUSED</text>
@@ -9193,6 +9177,8 @@ With Push Button</text>
 <instance part="LED5" gate="G$1" x="-10.16" y="175.26" rot="R270"/>
 <instance part="GND5" gate="1" x="-2.54" y="170.18"/>
 <instance part="R4" gate="G$1" x="-22.86" y="175.26" rot="R180"/>
+<instance part="GND6" gate="1" x="200.66" y="304.8"/>
+<instance part="GND10" gate="1" x="200.66" y="281.94"/>
 </instances>
 <busses>
 </busses>
@@ -9288,6 +9274,18 @@ With Push Button</text>
 <wire x1="-7.62" y1="175.26" x2="-2.54" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="175.26" x2="-2.54" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="PORTC" gate="A" pin="2"/>
+<wire x1="182.88" y1="309.88" x2="200.66" y2="309.88" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="309.88" x2="200.66" y2="307.34" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="PORTA" gate="A" pin="2"/>
+<wire x1="182.88" y1="287.02" x2="200.66" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="287.02" x2="200.66" y2="284.48" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="Q5_E" class="0">
@@ -9427,12 +9425,6 @@ With Push Button</text>
 <wire x1="185.42" y1="243.84" x2="180.34" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="243.84" x2="180.34" y2="246.38" width="0.1524" layer="91"/>
 <label x="180.34" y="246.38" size="1.778" layer="95"/>
-<pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="241.3" x2="180.34" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="243.84" x2="180.34" y2="241.3" width="0.1524" layer="91"/>
-<junction x="180.34" y="243.84"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<junction x="180.34" y="241.3"/>
 </segment>
 </net>
 <net name="PA0" class="0">
@@ -9441,8 +9433,9 @@ With Push Button</text>
 <wire x1="111.76" y1="299.72" x2="116.84" y2="299.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTA" gate="A" pin="1"/>
-<wire x1="175.26" y1="287.02" x2="165.1" y2="287.02" width="0.1524" layer="91"/>
+<pinref part="PORTA" gate="A" pin="10"/>
+<wire x1="182.88" y1="276.86" x2="190.5" y2="276.86" width="0.1524" layer="91"/>
+<label x="190.5" y="276.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA1" class="0">
@@ -9451,8 +9444,9 @@ With Push Button</text>
 <wire x1="111.76" y1="297.18" x2="116.84" y2="297.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTA" gate="A" pin="2"/>
-<wire x1="182.88" y1="287.02" x2="190.5" y2="287.02" width="0.1524" layer="91"/>
+<pinref part="PORTA" gate="A" pin="9"/>
+<wire x1="175.26" y1="276.86" x2="165.1" y2="276.86" width="0.1524" layer="91"/>
+<label x="165.1" y="276.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA2" class="0">
@@ -9461,8 +9455,9 @@ With Push Button</text>
 <wire x1="111.76" y1="294.64" x2="116.84" y2="294.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTA" gate="A" pin="3"/>
-<wire x1="175.26" y1="284.48" x2="165.1" y2="284.48" width="0.1524" layer="91"/>
+<pinref part="PORTA" gate="A" pin="8"/>
+<wire x1="182.88" y1="279.4" x2="190.5" y2="279.4" width="0.1524" layer="91"/>
+<label x="190.5" y="279.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA3" class="0">
@@ -9471,8 +9466,9 @@ With Push Button</text>
 <wire x1="111.76" y1="292.1" x2="116.84" y2="292.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTA" gate="A" pin="4"/>
-<wire x1="182.88" y1="284.48" x2="190.5" y2="284.48" width="0.1524" layer="91"/>
+<pinref part="PORTA" gate="A" pin="7"/>
+<wire x1="175.26" y1="279.4" x2="165.1" y2="279.4" width="0.1524" layer="91"/>
+<label x="165.1" y="279.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA4" class="0">
@@ -9481,8 +9477,9 @@ With Push Button</text>
 <wire x1="111.76" y1="289.56" x2="116.84" y2="289.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTA" gate="A" pin="5"/>
-<wire x1="175.26" y1="281.94" x2="165.1" y2="281.94" width="0.1524" layer="91"/>
+<pinref part="PORTA" gate="A" pin="6"/>
+<wire x1="182.88" y1="281.94" x2="190.5" y2="281.94" width="0.1524" layer="91"/>
+<label x="190.5" y="281.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA5" class="0">
@@ -9491,8 +9488,9 @@ With Push Button</text>
 <wire x1="111.76" y1="287.02" x2="116.84" y2="287.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTA" gate="A" pin="6"/>
-<wire x1="182.88" y1="281.94" x2="190.5" y2="281.94" width="0.1524" layer="91"/>
+<pinref part="PORTA" gate="A" pin="5"/>
+<wire x1="175.26" y1="281.94" x2="165.1" y2="281.94" width="0.1524" layer="91"/>
+<label x="165.1" y="281.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA6" class="0">
@@ -9501,8 +9499,9 @@ With Push Button</text>
 <wire x1="111.76" y1="284.48" x2="116.84" y2="284.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTA" gate="A" pin="7"/>
-<wire x1="175.26" y1="279.4" x2="165.1" y2="279.4" width="0.1524" layer="91"/>
+<pinref part="PORTA" gate="A" pin="4"/>
+<wire x1="182.88" y1="284.48" x2="190.5" y2="284.48" width="0.1524" layer="91"/>
+<label x="190.5" y="284.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA7" class="0">
@@ -9511,8 +9510,9 @@ With Push Button</text>
 <wire x1="111.76" y1="281.94" x2="116.84" y2="281.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTA" gate="A" pin="8"/>
-<wire x1="182.88" y1="279.4" x2="190.5" y2="279.4" width="0.1524" layer="91"/>
+<pinref part="PORTA" gate="A" pin="3"/>
+<wire x1="175.26" y1="284.48" x2="165.1" y2="284.48" width="0.1524" layer="91"/>
+<label x="165.1" y="284.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC0" class="0">
@@ -9521,8 +9521,9 @@ With Push Button</text>
 <wire x1="111.76" y1="254" x2="116.84" y2="254" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTC" gate="A" pin="1"/>
-<wire x1="175.26" y1="309.88" x2="165.1" y2="309.88" width="0.1524" layer="91"/>
+<pinref part="PORTC" gate="A" pin="10"/>
+<wire x1="182.88" y1="299.72" x2="190.5" y2="299.72" width="0.1524" layer="91"/>
+<label x="190.5" y="299.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC1" class="0">
@@ -9531,8 +9532,9 @@ With Push Button</text>
 <wire x1="111.76" y1="256.54" x2="116.84" y2="256.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTC" gate="A" pin="2"/>
-<wire x1="182.88" y1="309.88" x2="190.5" y2="309.88" width="0.1524" layer="91"/>
+<pinref part="PORTC" gate="A" pin="9"/>
+<wire x1="175.26" y1="299.72" x2="165.1" y2="299.72" width="0.1524" layer="91"/>
+<label x="165.1" y="299.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC2" class="0">
@@ -9541,8 +9543,9 @@ With Push Button</text>
 <wire x1="111.76" y1="259.08" x2="116.84" y2="259.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTC" gate="A" pin="3"/>
-<wire x1="175.26" y1="307.34" x2="165.1" y2="307.34" width="0.1524" layer="91"/>
+<pinref part="PORTC" gate="A" pin="8"/>
+<wire x1="182.88" y1="302.26" x2="190.5" y2="302.26" width="0.1524" layer="91"/>
+<label x="190.5" y="302.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC3" class="0">
@@ -9551,8 +9554,9 @@ With Push Button</text>
 <wire x1="111.76" y1="261.62" x2="116.84" y2="261.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTC" gate="A" pin="4"/>
-<wire x1="182.88" y1="307.34" x2="190.5" y2="307.34" width="0.1524" layer="91"/>
+<pinref part="PORTC" gate="A" pin="7"/>
+<wire x1="175.26" y1="302.26" x2="165.1" y2="302.26" width="0.1524" layer="91"/>
+<label x="165.1" y="302.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC4" class="0">
@@ -9561,8 +9565,9 @@ With Push Button</text>
 <wire x1="111.76" y1="264.16" x2="116.84" y2="264.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTC" gate="A" pin="5"/>
-<wire x1="175.26" y1="304.8" x2="165.1" y2="304.8" width="0.1524" layer="91"/>
+<pinref part="PORTC" gate="A" pin="6"/>
+<wire x1="182.88" y1="304.8" x2="190.5" y2="304.8" width="0.1524" layer="91"/>
+<label x="190.5" y="304.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC5" class="0">
@@ -9571,8 +9576,9 @@ With Push Button</text>
 <wire x1="111.76" y1="266.7" x2="116.84" y2="266.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTC" gate="A" pin="6"/>
-<wire x1="182.88" y1="304.8" x2="190.5" y2="304.8" width="0.1524" layer="91"/>
+<pinref part="PORTC" gate="A" pin="5"/>
+<wire x1="175.26" y1="304.8" x2="165.1" y2="304.8" width="0.1524" layer="91"/>
+<label x="165.1" y="304.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC6" class="0">
@@ -9581,8 +9587,9 @@ With Push Button</text>
 <wire x1="111.76" y1="269.24" x2="116.84" y2="269.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTC" gate="A" pin="7"/>
-<wire x1="175.26" y1="302.26" x2="165.1" y2="302.26" width="0.1524" layer="91"/>
+<pinref part="PORTC" gate="A" pin="4"/>
+<wire x1="182.88" y1="307.34" x2="190.5" y2="307.34" width="0.1524" layer="91"/>
+<label x="190.5" y="307.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PC7" class="0">
@@ -9591,8 +9598,9 @@ With Push Button</text>
 <wire x1="111.76" y1="271.78" x2="116.84" y2="271.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTC" gate="A" pin="8"/>
-<wire x1="182.88" y1="302.26" x2="190.5" y2="302.26" width="0.1524" layer="91"/>
+<pinref part="PORTC" gate="A" pin="3"/>
+<wire x1="175.26" y1="307.34" x2="165.1" y2="307.34" width="0.1524" layer="91"/>
+<label x="165.1" y="307.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VIN_REG" class="0">
@@ -9672,14 +9680,6 @@ With Push Button</text>
 <wire x1="81.28" y1="276.86" x2="66.04" y2="276.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PORTA" gate="A" pin="9"/>
-<wire x1="175.26" y1="276.86" x2="157.48" y2="276.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="PORTC" gate="A" pin="9"/>
-<wire x1="175.26" y1="299.72" x2="157.48" y2="299.72" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="G$1" pin="AVCC"/>
 <wire x1="111.76" y1="274.32" x2="116.84" y2="274.32" width="0.1524" layer="91"/>
 </segment>
@@ -9718,6 +9718,18 @@ With Push Button</text>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="-27.94" y1="175.26" x2="-43.18" y2="175.26" width="0.1524" layer="91"/>
 <label x="-43.18" y="175.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PORTC" gate="A" pin="1"/>
+<wire x1="175.26" y1="309.88" x2="152.4" y2="309.88" width="0.1524" layer="91"/>
+<label x="152.4" y="312.42" size="1.778" layer="95"/>
+<wire x1="152.4" y1="309.88" x2="152.4" y2="312.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="PORTA" gate="A" pin="1"/>
+<wire x1="175.26" y1="287.02" x2="152.4" y2="287.02" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="287.02" x2="152.4" y2="289.56" width="0.1524" layer="91"/>
+<label x="152.4" y="289.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -9807,18 +9819,6 @@ With Push Button</text>
 <wire x1="81.28" y1="292.1" x2="71.12" y2="292.1" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="PORTC" gate="A" pin="10"/>
-<wire x1="182.88" y1="299.72" x2="190.5" y2="299.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="PORTA" gate="A" pin="10"/>
-<wire x1="182.88" y1="276.86" x2="190.5" y2="276.86" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="PB4" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB4"/>
@@ -9830,6 +9830,13 @@ With Push Button</text>
 <pinref part="LED5" gate="G$1" pin="C"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="175.26" x2="-17.78" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="S1" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="241.3" x2="180.34" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
