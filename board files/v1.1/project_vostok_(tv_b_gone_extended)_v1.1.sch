@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9322,6 +9322,7 @@ With Push Button</text>
 <text x="17.78" y="161.798" size="1.778" layer="95">ID</text>
 <text x="17.78" y="156.464" size="1.778" layer="95">D-</text>
 <text x="15.748" y="154.178" size="1.778" layer="95">VCC</text>
+<text x="38.1" y="162.56" size="1.778" layer="95">FLOATING</text>
 </plain>
 <instances>
 <instance part="T1" gate="G1" x="-27.94" y="281.94"/>
@@ -9368,7 +9369,9 @@ With Push Button</text>
 <instance part="R4" gate="G$1" x="-22.86" y="175.26" rot="R180"/>
 <instance part="GND6" gate="1" x="200.66" y="304.8"/>
 <instance part="GND10" gate="1" x="200.66" y="281.94"/>
-<instance part="X1" gate="G41" x="27.94" y="160.02" rot="R180"/>
+<instance part="X1" gate="G41" x="27.94" y="160.02" smashed="yes" rot="R180">
+<attribute name="VALUE" x="17.78" y="167.64" size="1.778" layer="96" rot="R270"/>
+</instance>
 <instance part="R5" gate="G$1" x="53.34" y="149.86" smashed="yes" rot="R270">
 <attribute name="NAME" x="54.61" y="149.8346" size="1.778" layer="95"/>
 <attribute name="VALUE" x="54.61" y="147.574" size="1.778" layer="96"/>
@@ -9860,6 +9863,12 @@ With Push Button</text>
 <wire x1="71.12" y1="157.48" x2="76.2" y2="157.48" width="0.1524" layer="91"/>
 <label x="76.2" y="157.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="X1" gate="G41" pin="1"/>
+<wire x1="33.02" y1="154.94" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="154.94" x2="38.1" y2="147.32" width="0.1524" layer="91"/>
+<label x="38.1" y="147.32" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="PB0" class="0">
 <segment>
@@ -10051,13 +10060,6 @@ With Push Button</text>
 <pinref part="S1" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="241.3" x2="180.34" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="X1" gate="G41" pin="1"/>
-<wire x1="33.02" y1="154.94" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="154.94" x2="38.1" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
