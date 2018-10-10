@@ -1987,20 +1987,17 @@ design rules under a new name.</description>
 <element name="Q5" library="transistor-pnp" package="TO92-CBE" value="MPS2907A" x="59" y="25" smashed="yes" rot="R90">
 <attribute name="NAME" x="62" y="26" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="LED3" library="tvbgone" package="5MM-SIDE" value="LED" x="4" y="17" rot="MR270">
-<attribute name="NAME" x="9.1816" y="15.349" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="4.6096" y="13.9774" size="1.27" layer="27" ratio="10" rot="R180"/>
+<element name="LED3" library="tvbgone" package="5MM-SIDE" value="LED" x="4" y="17" smashed="yes" rot="MR270">
+<attribute name="NAME" x="9" y="14" size="1.27" layer="25" ratio="10" rot="R90"/>
 </element>
-<element name="LED1" library="tvbgone" package="5MM-SIDE" value="LED" x="4" y="39" rot="MR270">
-<attribute name="NAME" x="8.8514" y="40.905" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="4.6096" y="36.1044" size="1.27" layer="27" ratio="10" rot="R180"/>
+<element name="LED1" library="tvbgone" package="5MM-SIDE" value="LED" x="4" y="39" smashed="yes" rot="MR270">
+<attribute name="NAME" x="8" y="42" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
-<element name="LED2" library="tvbgone" package="5MM-SIDE" value="LED" x="4" y="29" rot="MR270">
-<attribute name="NAME" x="8.9276" y="26.968" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="1.1044" y="24.9106" size="1.27" layer="27" ratio="10"/>
+<element name="LED2" library="tvbgone" package="5MM-SIDE" value="LED" x="4" y="29" smashed="yes" rot="MR270">
+<attribute name="NAME" x="9" y="26" size="1.27" layer="25" ratio="10" rot="R90"/>
 </element>
 <element name="LED4" library="tvbgone" package="5MM-SIDE" value="LED" x="4" y="5" smashed="yes" rot="MR270">
-<attribute name="NAME" x="7.8354" y="7.54" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="8" y="8" size="1.27" layer="25" ratio="10" rot="R270"/>
 </element>
 <element name="ICSP" library="adaprog" package="ISP6" value="PINHD-2X3THM" x="91" y="37.5" smashed="yes">
 <attribute name="NAME" x="89.984" y="42.199" size="1.27" layer="25" ratio="10"/>
@@ -2011,9 +2008,9 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="81.5" y="28.5" size="1.27" layer="27" rot="R270"/>
 <attribute name="VALUE" x="81.5" y="28.5" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C1" library="rcl-ez" package="C025-025X050" value="100nF" x="47" y="24" smashed="yes">
-<attribute name="NAME" x="46.714" y="25.524" size="1.27" layer="25" ratio="10"/>
-<attribute name="VALUE" x="43.206" y="27.286" size="1.27" layer="27" ratio="10" rot="R270"/>
+<element name="C1" library="rcl-ez" package="C025-025X050" value="100nF" x="48" y="24" smashed="yes">
+<attribute name="NAME" x="43" y="24" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="51" y="24" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="PORTA" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X05" package3d_urn="urn:adsk.eagle:package:22470/2" value="" x="20.029640625" y="29.408059375" smashed="yes" rot="MR270">
 <attribute name="NAME" x="24.46601875" y="25.510040625" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -2037,17 +2034,17 @@ design rules under a new name.</description>
 <attribute name="RS_PART_NUMBER" value="9115520" x="42.7" y="138.6" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="42.7" y="138.6" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U1" library="SamacSys_Parts" package="PEC12R-4XXXF-SXXXX_1" value="PEC11R-4015F-S0024" x="90" y="9.525" smashed="yes" rot="MR270">
-<attribute name="3D_PACKAGE" value="" x="194.14" y="186.055" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="ALLIED_NUMBER" value="" x="194.14" y="186.055" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DESCRIPTION" value="Bourns 24 Pulse Incremental Mechanical Rotary Encoder with a 6 mm Flat Shaft (Not Indexed), Through Hole" x="194.14" y="186.055" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="HEIGHT" value="mm" x="194.14" y="186.055" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Bourns" x="194.14" y="186.055" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="PEC11R-4015F-S0024" x="194.14" y="186.055" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="NAME" x="86" y="10" size="1.27" layer="25" rot="R270" align="center"/>
-<attribute name="OTHER_PART_NUMBER" value="" x="194.14" y="186.055" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="RS_PART_NUMBER" value="7377739P" x="194.14" y="186.055" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="SUPPLIER_NAME" value="RS" x="194.14" y="186.055" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="U1" library="SamacSys_Parts" package="PEC12R-4XXXF-SXXXX_1" value="PEC11R-4015F-S0024" x="90" y="10" smashed="yes" rot="MR270">
+<attribute name="3D_PACKAGE" value="" x="194.14" y="186.53" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="194.14" y="186.53" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DESCRIPTION" value="Bourns 24 Pulse Incremental Mechanical Rotary Encoder with a 6 mm Flat Shaft (Not Indexed), Through Hole" x="194.14" y="186.53" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="HEIGHT" value="mm" x="194.14" y="186.53" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Bourns" x="194.14" y="186.53" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="PEC11R-4015F-S0024" x="194.14" y="186.53" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="86" y="10.475" size="1.27" layer="25" rot="R270" align="center"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="194.14" y="186.53" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="RS_PART_NUMBER" value="7377739P" x="194.14" y="186.53" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="194.14" y="186.53" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="BAT_1" library="SamacSys_Parts" package="2468" value="2468" x="47" y="29" rot="MR0">
 <attribute name="3D_PACKAGE" value="" x="179.08" y="-236.43" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -2157,14 +2154,14 @@ design rules under a new name.</description>
 <contactref element="X1" pad="5"/>
 <wire x1="92.175" y1="26.6" x2="93.54" y2="38.77" width="0" layer="19" extent="1-1"/>
 <wire x1="86" y1="25" x2="92.175" y2="26.6" width="0" layer="19" extent="1-1"/>
-<wire x1="97.5" y1="9.525" x2="92.175" y2="26.6" width="0" layer="19" extent="1-1"/>
-<wire x1="83" y1="7.025" x2="97.5" y2="9.525" width="0" layer="19" extent="1-1"/>
-<wire x1="80.25" y1="4.75" x2="83" y2="7.025" width="0" layer="19" extent="1-1"/>
+<wire x1="97.5" y1="10" x2="92.175" y2="26.6" width="0" layer="19" extent="1-1"/>
+<wire x1="83" y1="7.5" x2="97.5" y2="10" width="0" layer="19" extent="1-1"/>
+<wire x1="80.25" y1="4.75" x2="83" y2="7.5" width="0" layer="19" extent="1-1"/>
 <wire x1="75.75" y1="4.75" x2="80.25" y2="4.75" width="0" layer="19" extent="1-1"/>
 <wire x1="68.51" y1="34.51" x2="86" y2="25" width="0" layer="19" extent="1-1"/>
-<wire x1="48.27" y1="24" x2="68.51" y2="34.51" width="0" layer="19" extent="1-1"/>
-<wire x1="49.14" y1="20.24" x2="48.27" y2="24" width="0" layer="19" extent="1-1"/>
-<wire x1="49.27" y1="2" x2="48.27" y2="24" width="0" layer="19" extent="1-1"/>
+<wire x1="49.27" y1="24" x2="68.51" y2="34.51" width="0" layer="19" extent="1-1"/>
+<wire x1="49.14" y1="20.24" x2="49.27" y2="24" width="0" layer="19" extent="1-1"/>
+<wire x1="49.27" y1="2" x2="49.27" y2="24" width="0" layer="19" extent="1-1"/>
 <wire x1="46.6" y1="5" x2="49.27" y2="2" width="0" layer="19" extent="1-1"/>
 <wire x1="30" y1="33.95" x2="46.6" y2="5" width="0" layer="19" extent="1-1"/>
 <wire x1="30" y1="40.05" x2="30" y2="33.95" width="0" layer="19" extent="1-1"/>
@@ -2355,12 +2352,12 @@ design rules under a new name.</description>
 <signal name="PB0">
 <contactref element="U1" pad="1"/>
 <contactref element="IC1" pad="1"/>
-<wire x1="23.74" y1="20.24" x2="97.5" y2="12.025" width="0" layer="19" extent="1-1"/>
+<wire x1="23.74" y1="20.24" x2="97.5" y2="12.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB1">
 <contactref element="U1" pad="2"/>
 <contactref element="IC1" pad="2"/>
-<wire x1="26.28" y1="20.24" x2="97.5" y2="7.025" width="0" layer="19" extent="1-1"/>
+<wire x1="26.28" y1="20.24" x2="97.5" y2="7.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VOUT_REG">
 <contactref element="IC2" pad="3"/>
@@ -2376,9 +2373,9 @@ design rules under a new name.</description>
 <contactref element="PORTC" pad="1"/>
 <contactref element="PORTA" pad="1"/>
 <wire x1="71.05" y1="34.51" x2="88.46" y2="38.77" width="0" layer="19" extent="1-1"/>
-<wire x1="45.73" y1="24" x2="71.05" y2="34.51" width="0" layer="19" extent="1-1"/>
-<wire x1="46.6" y1="20.24" x2="45.73" y2="24" width="0" layer="19" extent="1-1"/>
-<wire x1="46.73" y1="2" x2="45.73" y2="24" width="0" layer="19" extent="1-1"/>
+<wire x1="46.73" y1="24" x2="71.05" y2="34.51" width="0" layer="19" extent="1-1"/>
+<wire x1="46.6" y1="20.24" x2="46.73" y2="24" width="0" layer="19" extent="1-1"/>
+<wire x1="46.73" y1="2" x2="46.73" y2="24" width="0" layer="19" extent="1-1"/>
 <wire x1="49.14" y1="5" x2="46.73" y2="2" width="0" layer="19" extent="1-1"/>
 <wire x1="46.19" y1="40" x2="49.14" y2="5" width="0" layer="19" extent="1-1"/>
 <wire x1="53.81" y1="37" x2="46.19" y2="40" width="0" layer="19" extent="1-1"/>
@@ -2392,7 +2389,7 @@ design rules under a new name.</description>
 <contactref element="U1" pad="4"/>
 <contactref element="R1" pad="1"/>
 <wire x1="36.19" y1="37" x2="59.3" y2="20.24" width="0" layer="19" extent="1-1"/>
-<wire x1="83" y1="12.025" x2="59.3" y2="20.24" width="0" layer="19" extent="1-1"/>
+<wire x1="83" y1="12.5" x2="59.3" y2="20.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="IC1" pad="16"/>
