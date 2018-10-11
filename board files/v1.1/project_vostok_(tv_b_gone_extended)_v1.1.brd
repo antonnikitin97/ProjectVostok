@@ -2367,15 +2367,8 @@ design rules under a new name.</description>
 <wire x1="4" y1="6.27" x2="4" y2="18.27" width="0" layer="19" extent="16-16"/>
 <wire x1="4" y1="6.27" x2="4" y2="6.27" width="0" layer="19" extent="1-16"/>
 </signal>
-<signal name="PB0">
-<contactref element="U1" pad="1"/>
-<contactref element="IC1" pad="1"/>
-<wire x1="23.74" y1="20.24" x2="97.5" y2="12.5" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="PB1">
-<contactref element="U1" pad="2"/>
+<signal name="UNUSED">
 <contactref element="IC1" pad="2"/>
-<wire x1="26.28" y1="20.24" x2="97.5" y2="7.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VOUT_REG">
 <contactref element="IC2" pad="3"/>
@@ -2450,14 +2443,18 @@ design rules under a new name.</description>
 <signal name="N$16">
 <contactref element="IC1" pad="19"/>
 </signal>
-<signal name="N$17">
+<signal name="PD6">
 <contactref element="IC1" pad="20"/>
+<contactref element="U1" pad="2"/>
+<wire x1="72" y1="20.24" x2="97.5" y2="7.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$18">
 <contactref element="IC1" pad="32"/>
 </signal>
-<signal name="N$19">
+<signal name="PD7">
 <contactref element="IC1" pad="21"/>
+<contactref element="U1" pad="1"/>
+<wire x1="72" y1="5" x2="97.5" y2="12.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB2">
 <contactref element="IC1" pad="3"/>
@@ -2521,6 +2518,9 @@ design rules under a new name.</description>
 <wire x1="41" y1="28" x2="50" y2="28" width="0.1524" layer="16"/>
 <wire x1="50" y1="28" x2="56.76" y2="21.24" width="0.1524" layer="16"/>
 <wire x1="56.76" y1="21.24" x2="56.76" y2="20.24" width="0.1524" layer="16"/>
+</signal>
+<signal name="N$1">
+<contactref element="IC1" pad="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
