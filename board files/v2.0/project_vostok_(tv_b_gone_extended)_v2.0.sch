@@ -9251,7 +9251,7 @@ DIN A3, landscape with location and doc. field</description>
 <text x="191.516" y="102.108" size="2.032" layer="94">http://www.tvbgone.com</text>
 <text x="191.516" y="107.188" size="2.032" layer="94">Project Vostok - Anton Nikitin
 IR LED Circuit taken from TV-B-Gone</text>
-<text x="246.38" y="109.22" size="2.54" layer="94">v1.1</text>
+<text x="246.38" y="109.22" size="2.54" layer="94">v2.0</text>
 <text x="191.516" y="98.806" size="2.54" layer="94">CC 2.5 BY/SA</text>
 <wire x1="-86.36" y1="342.9" x2="0" y2="342.9" width="0.1524" layer="95" style="shortdash"/>
 <wire x1="0" y1="342.9" x2="0" y2="266.7" width="0.1524" layer="95" style="shortdash"/>
